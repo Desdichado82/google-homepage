@@ -1,0 +1,122 @@
+body{
+    display:grid;
+    height:100vh;
+    margin:0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:0.5fr 1fr auto ;
+    grid-template-areas:"header header header" 
+    "main main main" 
+    "footer footer footer ";
+    font-family:ariel,sans-serif;
+    font-size:14px;
+    color: rgba(0,0,0,.54);
+    background-color:#fff;
+    font-weight: 400;
+}
+
+#main-header{
+    display:flex;
+   
+    flex-direction:row;
+    justify-content: flex-end;
+    grid-area:header;
+    line-height: 40px;
+}
+
+#main-page{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    grid-area:main;
+    line-height: 40px;
+}
+
+#main-footer{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+grid-area:footer;
+background-color:#f2f2f2;
+border-top: 1px solid #e4e4e4;
+line-height: 40px;
+
+
+}
+
+.blue{
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    background-color: #2b7de9;
+    color: white;
+    border: 1px solid #2b7de9;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: .25px;
+    line-height: 16px;
+    box-shadow: 0 1px 2px 0;
+}
+
+
+#apps {
+    height: 15px;
+    width: auto;
+    padding: 0px 0px 0px 5px;
+}
+
+.col{
+display:flex;
+flex-direction:column;
+min-width:500px;
+}
+
+li{
+    list-style: none;
+    display:inline-block;
+    padding:5px;
+}
+
+a{
+    padding:5px;
+}
+
+#google-logo{
+width: 272px;
+}
+
+.button {
+    text-decoration: none !important;
+    background-color: #f2f2f2;
+    box-shadow: none;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#search {
+    display: flex;
+    border: 1px solid #dfe1ef;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width:100%;
+}
+
+.center{
+  text-align:center;
+}
+
